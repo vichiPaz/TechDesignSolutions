@@ -1,0 +1,26 @@
+{
+  "name": "techdesignsolutions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass src/scss/main.scss dist/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vichiPaz/TechDesignSolutions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/vichiPaz/TechDesignSolutions/issues"
+  },
+  "homepage": "https://github.com/vichiPaz/TechDesignSolutions#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.7",
+    "sass": "^1.89.2"
+  }
+}

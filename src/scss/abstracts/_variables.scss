@@ -1,0 +1,53 @@
+//base variables
+$primary: rgb(28, 46, 32);
+$secondary: rgb(207, 215, 209);
+$tertiary: rgb(176, 188, 119);
+$background: rgb(249, 249, 249);
+$font-family-base: "Poppins", sans-serif;
+$carousel-control-color: $primary;
+
+//color scheme
+$body-bg: $background;
+
+//spacing
+$spacer: 1rem;
+
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4.5,
+  7: $spacer * 6,
+  8: $spacer * 7.5,
+  9: $spacer * 9,
+  10: $spacer * 10,
+);
+
+//rounded corners
+$enable-rounded: true;
+$btn-border-radius: 2px;
+$btn-border-radius-sm: 2px;
+$btn-border-radius-lg: 2px;
+
+$card-border-radius: 2px;
+$card-border-radius-sm: 2px;
+$card-border-radius-lg: 2px;
+
+$input-border-radius: 0;
+$input-border-radius-sm: 0;
+$input-border-radius-lg: 0;
+
+$alert-border-radius: 2px;
+$modal-content-border-radius: 2px;
+$dropdown-border-radius: 2px;
+$navbar-toggler-border-radius: 2px;
+
+//buttons
+$btn-primary-bg: $secondary;
+$btn-color: $secondary;
+$btn-padding-y: 0.5rem;
+$btn-padding-x: 2rem;
+$color-contrast-light: $secondary;
