@@ -9,7 +9,21 @@
   color: variables.$secondary !important;
 
   &:hover {
-    background-color: variables.$tertiary !important;
+    background-color: variables.$secondary !important;
     color: variables.$primary !important;
+    border: 1px solid variables.$primary !important;
+  }
+}
+
+.btn-outline-primary {
+  // @include mixins.flex-center;
+  border: 1px solid variables.$primary !important;
+  cursor: pointer !important;
+  background-color: variables.$secondary !important;
+  color: variables.$primary !important;
+
+  &:hover {
+    background-color: variables.$primary !important;
+    color: variables.$secondary !important;
   }
 }

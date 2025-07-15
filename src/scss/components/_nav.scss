@@ -3,12 +3,41 @@
 @use "./button";
 
 .navbar {
-  background-color: variables.$background;
-  color: variables.$primary;
+  background-color: variables.$black !important;
+  color: variables.$tertiary !important;
   border-bottom: 1px solid variables.$primary;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 
-  &__brand {
-    color: variables.$primary;
+  &-brand {
+    color: variables.$tertiary !important;
     font-weight: bold;
+  }
+
+  &-collapse {
+    color: variables.$tertiary !important;
+  }
+
+  &-nav {
+    color: variables.$tertiary !important;
+    font-weight: medium;
+  }
+}
+
+.nav-item li a {
+  color: variables.$tertiary !important;
+  font-weight: medium;
+
+  &:hover {
+    color: variables.$primary !important;
+  }
+}
+
+.nav-link {
+  color: variables.$primary !important;
+
+  &.active {
+    color: variables.$primary !important;
   }
 }

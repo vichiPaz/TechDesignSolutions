@@ -1,0 +1,59 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.product__gallery {
+  @include mixins.flex-center;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.product__card {
+  width: auto;
+  background-color: $background;
+  color: $tertiary;
+  border: 1px solid $gray-100;
+
+  &--img {
+    height: 350px;
+    object-fit: cover;
+    @include mixins.tablet() {
+      height: 300px;
+      object-fit: cover;
+    }
+    @include mixins.desktop() {
+      height: 15rem;
+      object-fit: cover;
+    }
+  }
+
+  &--body {
+    text-align: left;
+    height: 15rem;
+    @include mixins.flex-between;
+    flex-direction: column;
+    justify-content: space-between;
+    text-wrap: balance;
+  }
+  &--title {
+    font-weight: medium;
+    font-size: 2rem;
+    @include mixins.tablet() {
+      font-size: 2rem;
+    }
+    @include mixins.desktop() {
+      font-size: 1.5rem;
+    }
+  }
+
+  &--text {
+    font-size: 1rem;
+    color: variables.$gray-20;
+    @include mixins.tablet() {
+      font-size: 1rem;
+    }
+    @include mixins.desktop() {
+      font-size: 0.9rem;
+    }
+  }
+}
