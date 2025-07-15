@@ -1,7 +1,12 @@
 @use "./abstracts/variables";
 @use "./abstracts/mixins";
 @use "./components/button";
+@use "./components/nav";
+@use "./pages/home";
+
+$primary: variables.$primary;
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
 @import "../../node_modules/bootstrap/scss/mixins";

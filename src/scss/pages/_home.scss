@@ -1,0 +1,21 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+@use "../components/button";
+@use "../components/nav";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  @include mixins.flex-center;
+  position: relative;
+  min-height: 60vh;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5),
+    url("../../../public/assets/img/wave.jpg") center/cover no-repeat
+  );
+}

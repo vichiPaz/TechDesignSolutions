@@ -3,14 +3,13 @@
 
 .btn-primary {
   @include mixins.flex-center;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  // padding: variables.$spacers[3] variables.$spacers[2];
-  background-color: variables.$secondary;
-  color: variables.$primary;
+  border: none !important;
+  cursor: pointer !important;
+  background-color: variables.$primary !important;
+  color: variables.$secondary !important;
 
   &:hover {
     background-color: variables.$tertiary !important;
+    color: variables.$primary !important;
   }
 }
