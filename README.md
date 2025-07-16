@@ -106,3 +106,9 @@ Abra `index.html` en su navegador web para ver el proyecto. La página `contact.
 ## Despliegue
 
 Este proyecto está diseñado para ser fácilmente desplegable en servicios de alojamiento de sitios estáticos como GitHub Pages, Netlify o Vercel. Los archivos `index.html` y `contact.html` se encuentran en el directorio raíz para una configuración de despliegue sencilla.
+
+## Desarrollado por
+
+Valentina Troncoso Molina
+
+vtroncosomolina@gmail.com
