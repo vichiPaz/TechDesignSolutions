@@ -64,8 +64,8 @@
         </div>
       </div>
     </nav>
-    <div class="alert__sticky p-0" id="liveAlertPlaceholder"></div>
 
+    <!-- hero -->
     <section class="hero w-100 h-100">
       <div class="overlay"></div>
       <div class="hero__text container">
@@ -81,13 +81,18 @@
           </p>
         </div>
         <div class="hero__text--btn btn">
-          <button class="btn btn-primary">Get Started</button>
+          <button
+            class="btn btn-primary"
+            onclick="location.href='./contact.html'"
+          >
+            Get Started
+          </button>
         </div>
       </div>
     </section>
     <!-- brands -->
     <section class="h-100">
-      <div class="container brands__title pt-10 pb-6">
+      <div class="container brands__title pt-10 pb-3">
         <h2 class="text-center brands__title--text link-primary">
           We work with the best brands
         </h2>
@@ -184,30 +189,41 @@
       </div>
     </section>
 
-    <!-- main  -->
     <main class="container">
       <!-- about us -->
-      <div class="aboutUs h-100 pb-6" id="aboutUs">
-        <div class="aboutUs__title pt-5">
-          <h2 class="text-right aboutUs__title--text p-3">About Us</h2>
+      <div
+        class="aboutUs h-100 pb-10 d-flex flex-column flex-md-column flex-lg-row flex-xl-row"
+        id="aboutUs"
+      >
+        <div class="aboutUs__text">
+          <div class="aboutUs__title pt-5">
+            <h2 class="text-right aboutUs__title--text p-3">About Us</h2>
+          </div>
+          <div class="aboutUs__subtitle text-right p-3">
+            <p class="lead lead-lg text-primary">
+              We empower businesses with cutting-edge technology solutions,
+              driving growth and efficiency in the digital age.
+            </p>
+          </div>
+          <div class="aboutUs__subtitle text-right p-3">
+            <p class="lead lead-lg text-primary">
+              We empower businesses with cutting-edge technology solutions,
+              driving growth and efficiency in the digital age.
+            </p>
+          </div>
+          <div class="aboutUs__subtitle text-right p-3">
+            <p class="lead lead-lg text-primary">
+              We empower businesses with cutting-edge technology solutions,
+              driving growth and efficiency in the digital age.
+            </p>
+          </div>
         </div>
-        <div class="aboutUs__text text-right p-3">
-          <p class="lead lead-lg text-primary">
-            We empower businesses with cutting-edge technology solutions,
-            driving growth and efficiency in the digital age.
-          </p>
-        </div>
-        <div class="aboutUs__text text-right p-3">
-          <p class="lead lead-lg text-primary">
-            We empower businesses with cutting-edge technology solutions,
-            driving growth and efficiency in the digital age.
-          </p>
-        </div>
-        <div class="aboutUs__text text-right p-3">
-          <p class="lead lead-lg text-primary">
-            We empower businesses with cutting-edge technology solutions,
-            driving growth and efficiency in the digital age.
-          </p>
+        <div class="aboutUs__img">
+          <img
+            src="https://i.pinimg.com/736x/a5/08/71/a508711adc44790fdf91833c2530f2cc.jpg"
+            class="d-none d-md-block h-auto"
+            alt="Imagen tablet y desktop"
+          />
         </div>
       </div>
       <!-- products  -->
@@ -277,25 +293,35 @@
           </div>
         </div>
       </div>
-      <!-- contactForm -->
-      <div class="pt-4 pt-lg-6 px-lg-10 pt-5">
-        <h2 class="form__contact--title mb-1 text-center">
-          Ready to Elevate Your Business?
-        </h2>
-        <div class="px-3 px-lg-10 text-center">
-          <h3>
+      <!-- cta -->
+      <div class="cta px-lg-10 pt-10">
+        <div class="cta__title">
+          <h2 class="cta__title--text mb-1 text-center">
+            Ready to Elevate Your Business?
+          </h2>
+        </div>
+        <div class="px-3 px-lg-10">
+          <h3 class="cta__subtitle text-center">
             Let's discuss how our technology solutions can help you achieve your
             goals.
           </h3>
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <div class="cta__btn">
+          <button
+            type="submit"
+            class="btn btn-primary mx-auto d-block"
+            onclick="location.href='./contact.html'"
+          >
+            Contact Us
+          </button>
+        </div>
       </div>
     </main>
 
     <footer class="footer">
       <div class="footer__content">
         <p class="footer__content--text text-center">
-          Derechos reservados a quienes correspondan, &copy; 2025
+          All rights reserved to whom it belongs, &copy; 2025
         </p>
         <ul class="footer__social">
           <li>

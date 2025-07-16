@@ -1,0 +1,123 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.alert-dismissible .btn-close {
+  position: absolute;
+  z-index: 20;
+  top: auto;
+}
+
+.form {
+  @include mixins.flex-center;
+  flex-direction: column;
+  margin: auto;
+  padding: 1rem;
+  @include mixins.tablet() {
+    @include mixins.flex-center;
+    flex-direction: column;
+    margin: auto;
+    width: 70vw;
+  }
+  @include mixins.desktop() {
+    @include mixins.flex-center;
+    flex-direction: column;
+    margin: auto;
+    width: 70vw;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 500;
+
+    @include mixins.tablet() {
+      font-size: 3.5rem;
+      font-weight: 500;
+    }
+    @include mixins.desktop() {
+      font-size: 4rem;
+      font-weight: 500;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    @include mixins.flex-center;
+    @include mixins.tablet() {
+      width: 60vw;
+    }
+    @include mixins.desktop() {
+      width: 40vw;
+    }
+  }
+}
+
+.info {
+  @include mixins.flex-center;
+  flex-direction: column;
+
+  @include mixins.desktop() {
+    @include mixins.flex-between;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  &__contact {
+    @include mixins.flex-center;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+
+    @include mixins.desktop() {
+      @include mixins.flex-between;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &--title {
+      h2 {
+        font-size: 3rem;
+        font-weight: 500;
+
+        @include mixins.tablet() {
+          font-size: 3.5rem;
+          font-weight: 500;
+        }
+        @include mixins.desktop() {
+          font-size: 4rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  &__map {
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+
+    @include mixins.tablet() {
+      width: 500px;
+      height: auto;
+      object-fit: cover;
+    }
+    @include mixins.desktop() {
+      width: 600px;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}

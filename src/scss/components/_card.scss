@@ -17,6 +17,7 @@
   &--img {
     height: 350px;
     object-fit: cover;
+
     @include mixins.tablet() {
       height: 300px;
       object-fit: cover;
