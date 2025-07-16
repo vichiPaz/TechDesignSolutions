@@ -14132,16 +14132,27 @@ html {
   position: relative;
   z-index: 1;
   text-align: center;
+  flex-wrap: wrap;
 }
 .hero__text h1, .hero__text .h1 {
-  font-size: 4rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
   font-weight: 500;
+}
+@media (min-width: 768px) {
+  .hero__text h1, .hero__text .h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .hero__text h1, .hero__text .h1 {
+    font-size: 4.5rem;
+  }
 }
 .hero__text p {
   font-size: 1.5rem;
   margin-bottom: 4rem;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .overlay {
@@ -14246,7 +14257,7 @@ html {
 }
 .cta__subtitle {
   font-size: 1.5rem;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 1.5;
   color: hsl(0, 0%, 60%);
 }
@@ -14267,7 +14278,7 @@ html {
 
 .alert-dismissible .btn-close {
   position: absolute;
-  z-index: 20;
+  z-index: 200;
   top: auto;
 }
 
@@ -14365,8 +14376,9 @@ html {
   }
 }
 .info__contact--title h2, .info__contact--title .h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 500;
+  padding-left: 0.5rem;
 }
 @media (min-width: 768px) {
   .info__contact--title h2, .info__contact--title .h2 {
