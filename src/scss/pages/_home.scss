@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-padding-top: 80px;
+}
+
 .hero {
   @include mixins.flex-center;
   position: relative;
@@ -49,4 +53,65 @@
   background: rgba(0, 0, 0, 0.4);
   pointer-events: none;
   z-index: 0;
+}
+
+.product {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+
+  &__title {
+    h2 {
+      font-size: 3rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.brands {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+
+  &__title {
+    h2 {
+      font-size: 3rem;
+      font-weight: 500;
+    }
+  }
+
+  &__logos {
+    @include mixins.flex-center;
+    flex-direction: row;
+    width: max-content;
+    animation: scroll $scroll-duration linear infinite;
+    gap: 0;
+
+    &--logo {
+      height: 15rem;
+      width: 15rem;
+      object-fit: cover;
+    }
+
+    &--img {
+      height: 15rem;
+      width: 15rem;
+      object-fit: cover;
+    }
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-80%);
+  }
+}
+
+#products {
+  margin-top: 4rem;
 }

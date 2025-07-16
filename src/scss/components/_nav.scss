@@ -31,11 +31,13 @@
 
   &:hover {
     color: variables.$primary !important;
+    text-decoration: underline !important;
+    text-underline-offset: 4px !important;
   }
 }
 
 .nav-link {
-  color: variables.$primary !important;
+  color: variables.$tertiary !important;
 
   &.active {
     color: variables.$primary !important;

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechDesign Solutions</title>
+    <link rel="stylesheet" href="../dist/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./public/js/bootstrap.bundle.min.js" defer></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/09bf171868.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-1 py-lg-2">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">TechDesign Solutions</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto px-2 mb-2 mb-lg-0">
+            <li class="nav-item px-2">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">Our Services</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex" role="search">
+            <button class="btn btn-outline-primary" type="submit">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="alert__sticky p-0" id="liveAlertPlaceholder"></div>
+    <!-- contactForm -->
+    <div class="pt-4 pt-lg-6 px-lg-10 pt-5 section">
+      <h2 class="form__contact--title mb-1 text-center">Contáctanos</h2>
+      <div class="px-lg-10"></div>
+      <form id="formulario-contacto" class="row p-3 g-3 g-lg-0" validate>
+        <div class="px-lg-1 col-lg">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input
+            type="text"
+            class="form-control border-primary"
+            id="nombre"
+            required
+          />
+        </div>
+        <div class="px-lg-1 col-lg">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control border-primary"
+            id="email"
+            aria-describedby="emailHelp"
+            required
+          />
+          <div id="emailHelp" class="form-text">
+            Nunca le pasaremos tu email a nadie.
+          </div>
+        </div>
+        <div>
+          <div class="px-lg-1">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea
+              class="form-control border-primary"
+              id="mensaje"
+              rows="3"
+              placeholder="Déjanos un mensaje..."
+              required
+            ></textarea>
+          </div>
+          <div
+            class="form-check py-lg-3 px-auto pt-3 d-flex justify-content-center"
+          >
+            <input
+              type="checkbox"
+              class="form-check-input border-primary"
+              id="newsletter"
+            />
+            <label class="form-check-label px-2" for="newsletter">
+              Suscríbete a nuestro Newsletter
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>
