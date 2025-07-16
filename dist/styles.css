@@ -14311,7 +14311,7 @@ html {
   }
 }
 .form__title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 500;
 }
 @media (min-width: 768px) {
@@ -14393,7 +14393,7 @@ html {
   }
 }
 .info__map {
-  width: 350px;
+  width: 300px;
   height: auto;
   object-fit: cover;
 }
